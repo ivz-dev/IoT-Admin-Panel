@@ -6,4 +6,6 @@ export const DevicesListWrapper = styled.div`
     background: #FFFFFF;
     border: 1px solid #E4E8EA;
     border-radius: 3px;
+    padding: 20px;
+    box-sizing: border-box;
 `
