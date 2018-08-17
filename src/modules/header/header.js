@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { HeaderWrapper } from "./header.styled";
+import HeaderSearch from "../../components/headerSearch";
 
 
 class Header extends Component {
     render() {
-        return <HeaderWrapper />
+        return (
+            <HeaderWrapper>
+                <HeaderSearch />
+            </HeaderWrapper>
+        )
     }
 }
 

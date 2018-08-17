@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { SidebarWrapper, LogoContainer, MenuContainer, MenuItem, ItemContainer } from "./sidebar.styled";
-import dashboardIcon from './static/dashboard.svg';
-import dashboardIconWhite from './static/dashboardWhite.svg';
-import devicesIcon from './static/devices.svg';
-import devicesIconWhite from './static/devicesWhite.svg';
+import { Icon } from 'react-icons-kit';
+import { layers, grid_1 } from 'react-icons-kit/ikons';
+import { SidebarWrapper, LogoContainer, MenuContainer, ItemContainer } from "./sidebar.styled";
 
 
 
@@ -12,14 +10,16 @@ class Sidebar extends Component {
     render() {
         return (
             <SidebarWrapper>
-                <LogoContainer />
+                <LogoContainer>
+                    D
+                </LogoContainer>
                 <MenuContainer>
-                    <ItemContainer>
-                        <MenuItem src={dashboardIconWhite} />
+                    <ItemContainer active>
+                        <Icon size={20} icon={layers} /> 
                     </ItemContainer>
 
                     <ItemContainer>
-                        <MenuItem src={devicesIconWhite} />
+                        <Icon size={20} icon={grid_1} /> 
                     </ItemContainer>
 
                 </MenuContainer>

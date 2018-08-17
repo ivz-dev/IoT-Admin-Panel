@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SidebarWrapper = styled.div`
-    width: 50px;
+    width: 65px;
     position: absolute;
     height: 100%;
     background: #FAFBFC;
@@ -12,8 +12,12 @@ export const SidebarWrapper = styled.div`
 
 export const LogoContainer = styled.div`
     width: 100%;
-    height: 50px;
+    height: 64px;
     border-bottom: 1px solid #E7E9Ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 `;
 
 export const MenuContainer = styled.div`
@@ -25,19 +29,16 @@ export const MenuContainer = styled.div`
     margin-top: 10px;
 `;
 
-export const MenuItem = styled.img`
-    margin: 10px 0;
-`;
-
 export const ItemContainer = styled.div`
     width: 25px;
     height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #4DA1FF;
     padding: 5px;
     border-radius: 3px;
     margin-bottom: 15px;
     cursor: pointer;
+    color: ${props => props.active ? "#fff" : "#d4bbbb"};
+    background: ${props => props.active ? "#4DA1FF" : "#fff"};
 `

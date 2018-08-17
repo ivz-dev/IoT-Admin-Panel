@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from "./modules/header/header";
 import Sidebar from "./modules/sidebar/sidebar";
 import DevicesMenu from './modules/devicesMenu/devicesMenu';
 import DevicesList from './modules/devicesList/devicesList';
 import Device from './modules/device/device';
+import SubHeader from "./modules/subHeader/subHeader"
+
 import {
   DevicesListContainer,
   DeviceContainer,
-  Container
+  Container,
+  ContentContainer
 } from "./Containers.styled";
 
 class App extends Component {
@@ -20,11 +22,14 @@ class App extends Component {
         <Sidebar />
 
         <Container>
-        <DevicesListContainer>
-          <DevicesMenu />
-          <DevicesList />
-        </DevicesListContainer>
-
+        
+        <ContentContainer>
+          <SubHeader />
+          <DevicesListContainer>
+            <DevicesMenu />
+            <DevicesList />
+          </DevicesListContainer>
+        </ContentContainer>
         <DeviceContainer>
           <Device />
         </DeviceContainer>

@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const DevicesMenuWrapper = styled.div`
     width: 250px
-    height: 600px;
+    height: 100%;
     background: #FFFFFF;
     border: 1px solid #E4E8EA;
     border-radius: 3px;
     padding: 20px 15px;
     box-sizing: border-box;
+    margin-right: 20px;
 `;
 
 export const Label = styled.div`
