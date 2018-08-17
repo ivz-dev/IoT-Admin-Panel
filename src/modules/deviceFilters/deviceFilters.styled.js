@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const DeviceFiltersWrapper = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom: 1px solid #E4E8EA;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 `
 
 export const Label = styled.span`
@@ -13,5 +17,10 @@ export const Label = styled.span`
 `;
 
 export const FiltersContainer = styled.div`
+    width: 100%;
 
+    input {
+        width: 200px;
+        margin-right: 10px;
+    }
 `;
