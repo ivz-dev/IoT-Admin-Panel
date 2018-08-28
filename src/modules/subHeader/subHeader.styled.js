@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SubHeaderWrapper = styled.div`
     width: 100%;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: flex-start;

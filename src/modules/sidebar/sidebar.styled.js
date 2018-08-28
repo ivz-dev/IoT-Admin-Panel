@@ -40,5 +40,5 @@ export const ItemContainer = styled.div`
     margin-bottom: 15px;
     cursor: pointer;
     color: ${props => props.active ? "#fff" : "#d4bbbb"};
-    background: ${props => props.active ? "#4DA1FF" : "#fff"};
+    background: ${props => props.active ? "#4DA1FF" : "#fafbfc"};
 `

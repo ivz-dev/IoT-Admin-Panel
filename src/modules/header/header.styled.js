@@ -14,3 +14,11 @@ export const HeaderWrapper = styled.div`
     padding: 0 20px;
     box-sizing: border-box;
 `;
+
+export const UserProfileWrapper = styled.img`
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+`;

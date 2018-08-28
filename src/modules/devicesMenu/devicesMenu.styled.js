@@ -23,7 +23,7 @@ export const DeviceTypesList = styled.div`
 
 export const DeviceTypeItem = styled.div`
     width: 100%;
-    height: 45px;
+    height: 40px;
     border: 1px solid #E9EFF4;
     border-radius: 5px;
     margin-bottom: 10px;
