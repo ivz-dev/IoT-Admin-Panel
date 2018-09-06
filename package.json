@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rebass/grid": "^6.0.0-0",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -50,7 +51,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "lint": "eslint ./ --fix --cache --ignore-pattern .gitignore"
+    "lint": "eslint ./ --fix --cache --ignore-pattern .gitignore",
+    "precommit": "pretty-quick --staged"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -93,5 +95,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "prettier": "1.14.2"
   }
 }

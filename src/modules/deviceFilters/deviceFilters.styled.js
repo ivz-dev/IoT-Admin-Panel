@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
 export const DeviceFiltersWrapper = styled.div`
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
     border-bottom: 1px solid #E4E8EA;
     padding-bottom: 20px;
     box-sizing: border-box;
 `
 
-export const Label = styled.span`
+export const Label = styled.div`
     text-transform: uppercase;
     color: #323C47;
     font-size: 11px;

@@ -7,6 +7,7 @@ export const SubHeaderWrapper = styled.div`
     align-items: center;
     justify-content: flex-start;
     padding: 20px 0 0 21px;
+    box-sizing: border-box;
 
     span {
         margin-right: 30px;

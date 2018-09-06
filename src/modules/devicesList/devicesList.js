@@ -3,12 +3,19 @@ import { DevicesListWrapper, DevicesContainer, DeviceItem, DeviceStatus, Ind, De
 import DeviceFilters from "../deviceFilters/deviceFilters";
 import { Icon } from 'react-icons-kit';
 import {iosLocationOutline} from 'react-icons-kit/ionicons/iosLocationOutline'
+import { Box } from '@rebass/grid'
+
 
 const DevicesMock = [
     { title: "Router 12849", status: true, location: "West Willard"},
     { title: "Router 12859", status: true, location: "West Willard"},
     { title: "Router 12869", status: true, location: "West Willard"},
     { title: "Router 12879", status: false, location: "West Willard"},
+    { title: "Router 12889", status: false, location: "West Willard"},
+    { title: "Router 12859", status: true, location: "West Willard"},
+    { title: "Router 12869", status: true, location: "West Willard"},
+    { title: "Router 12879", status: false, location: "West Willard"},
+    { title: "Router 12889", status: false, location: "West Willard"},
     { title: "Router 12889", status: false, location: "West Willard"},
     { title: "Router 12859", status: true, location: "West Willard"},
     { title: "Router 12869", status: true, location: "West Willard"},
@@ -24,7 +31,8 @@ class DevicesList extends Component {
                 <DevicesContainer>
                     {
                         DevicesMock.map((item, index) => (
-                            <DeviceItem >
+                            <Box width={1/3} p={2}>
+                            <DeviceItem>
                                 <DeviceStatus> <Ind></Ind> <span> {item.status ? "On" : "Off"} </span> </DeviceStatus>
                                 <DeviceTitle>  {item.title}  </DeviceTitle>
                                 <DeviceLocation>
@@ -32,6 +40,7 @@ class DevicesList extends Component {
                                     <span>{item.location}</span>
                                 </DeviceLocation>
                             </DeviceItem>
+                            </Box>
                         ))
                     }
                 </DevicesContainer>

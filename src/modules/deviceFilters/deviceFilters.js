@@ -4,7 +4,8 @@ import Input from "../../components/input";
 
 const FiltersMock = [
     { title: "Name", field: "name" },
-    { title: "Location", field: "location" }
+    { title: "Location", field: "location" },
+    { title: "Type", field: "type" }
 ]
 
 class DeviceFilters extends Component {
